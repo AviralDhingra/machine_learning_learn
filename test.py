@@ -25,10 +25,11 @@ x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(
 
 
 # TRAIN MODEL MULTIPLE TIMES FOR BEST SCORE
-"""
+
 best = 0
 for _ in range(30):
-    x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y, test_size=0.1)
+    x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(
+        x, y, test_size=0.1)
 
     linear = linear_model.LinearRegression()
 
@@ -40,7 +41,7 @@ for _ in range(30):
         best = acc
         with open("studentgrades.pickle", "wb") as f:
             pickle.dump(linear, f)
-"""
+
 
 # LOAD MODEL
 pickle_in = open("studentgrades.pickle", "rb")
