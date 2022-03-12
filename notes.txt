@@ -1,0 +1,16 @@
+attiribute = columns (independent data)
+label = what we are guessing? (dependent data) --> from all the other attributes
+
+Linear Regression (maths) => 
+ - https://www.techwithtim.net/tutorials/machine-learning-python/linear-regression-2/
+ - the best fit line according to the datapouints
+ - u cannot visualize it as each feature accounts for 1 dimension thus more than 3 cannot be drawn
+ - Equation: y = m*x+b
+ 	 - m is the slope. Meaning how much the y value increases for each x value.
+ 	 - b is the y intercept. Where the line cro
+ 	 sses the y axis.
+
+K Nearest Neighbor (KNN) => https://www.techwithtim.net/tutorials/machine-learning-python/k-nearest-neighbors-2/
+
+-------------------------
+data sample => https://archive.ics.uci.edu/ml/datasets/Student+Performance

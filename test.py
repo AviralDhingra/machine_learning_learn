@@ -25,7 +25,7 @@ x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(
 
 
 # TRAIN MODEL MULTIPLE TIMES FOR BEST SCORE
-
+"""
 best = 0
 for _ in range(30):
     x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(
@@ -41,7 +41,8 @@ for _ in range(30):
         best = acc
         with open("studentgrades.pickle", "wb") as f:
             pickle.dump(linear, f)
-
+print(f'\nHighest (Final) Accuracy: {round(best*100)}%')
+"""
 
 # LOAD MODEL
 pickle_in = open("studentgrades.pickle", "rb")
@@ -55,7 +56,7 @@ print("-------------------------")
 
 predicted = linear.predict(x_test)
 for x in range(len(predicted)):
-    print(predicted[x], x_test[x], y_test[x])
+    print(f'Predicted: {round(predicted[x])}, Actual: {y_test[x]}')
 
 # Drawing and plotting model
 style.use("ggplot")
